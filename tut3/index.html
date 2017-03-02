@@ -34,30 +34,38 @@
 </div>
 <br><br>
 <p style="color:red"><b>Use of audio tag</b></p>
-<audio controls autoplay>
+<audio controls>
 <source src="http://www.w3schools.com/tags/horse.ogg">
 </audio>
 		</div>
 		<div class="col-md-4">
 			<div style= " border:1px solid; background-color:beige;margin-bottom:5px; margin-top:5px;">
-<form style="padding : 5px;">
+<form autocomplete="on" style="padding : 5px;">
+<fieldset style = "border : 2px solid; padding : 3px" >
+<legend style = "text-align : center; font-size : 15px;">SUGGESTION FORM</legend>
 <br>
+Progress
+<p style = "text-align : center;"><progress value = "50" max = "100"></progress></p>
 <p>Name :
-<input type="text" required></p><br>
+<input type="text"  required style = "background-color : gray;color : white;"></p><br>
 <p>Gender</p>
 <input type="radio" name="gender" value="male">MALE<br>
-<input type="radio" name="gender" value="female">FEMALE<br><br>
+<input type="radio" name="gender" value="female">FEMALE
+<br><br>
 <p>E-mail id :
 <input type="email" required> </p>
 <p>Phone Number :
 <input type="number" min="01111111111" max="99999999999" name="phno" required > </p>
 <p>Date of birth : 
 <input type="date" required></p>
+<p>Select your favorite color:
+<input type="color" name="favcolor" value="#ff0000"></p>
 <p>Address line 1 : 
 <input type="text" required></p>
 <p>Address line 2 : 
 <input type="text" required></p>
-<p>City : 
+<p>
+City : 
 <select>
 	<option>Mumbai</option>
 	<option>Delhi</option>
@@ -65,6 +73,7 @@
 	<option>Pune</option>
 </select>
 </p>
+<input type="hidden" name="country" value="India">
 <p>State : 
 <select>
 	<option>Maharashtra</option>
@@ -73,19 +82,26 @@
 	<option>Bihar</option>
 </select>
 </p>
-<textarea rows=10 cols=40 required placeholder=Suggestions></textarea>
-<p>What do you like? (Select any number of options)</p>
+<textarea rows=10 cols=35 required placeholder=Suggestions></textarea>
+<p>What do you like? (Select any number of options)
+</p>
 <input type="checkbox">Fruits<br>
 <input type="checkbox">Vegetables<br>
 <input type="checkbox">Junk<br>
 <input type="checkbox">Meat<br>
 <input type="checkbox">Milk Products<br>
 <p>How much do you like this page?</p>
-<input type="range" min="0" max="10"></br> 
- <button id="submit" class="btn btn" type="submit">Submit</button>
- <button id="submit" class="btn btn" type="reset">Reset</button>
- </form>
- </div>
+<input type="range" min="0" max="10"><br> 
+<p>Upload your image</p>
+<input type = "file">
+<br>
+</fieldset>
+<p style = "text-align : center; padding-top : 3px;">
+<button id="submit" class="btn btn" type="submit">Submit</button>
+<button id="submit" class="btn btn" type="reset">Reset</button>
+</p>
+</form>
+</div>
 		</div>
 	</div>
 </div>
