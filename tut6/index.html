@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<p>1a)We successfully display personalized message to user on clicking login.</p>
+	<input type="button" value="Login" onclick="alert('nice')">
+	<hr>
+	<p id="time">1b)We successfully display System Time on click : </p>
+	<p id="txt"></p>
+	<input type="button" value="Click here to see System Time" onclick="document.getElementById('txt').innerHTML = Date();">
+	<hr>
+	<p>3)To see Calculator <a href="calc.html">click here</a></p>
+<!-- 	<p>To see clock <a href="clock.html">click here</a></p> -->
+	<hr>
+	<p id="abc">4a)This is an old content</p>
+	<input type="button" value="Click to change the above line" onclick="changeC()">
+	<hr>
+	<p id="xyz">4b)This text will move to position you click on</p>
+	<input type="button" value="left" onclick="left()">
+	<input type="button" value="center" onclick="center()">
+	<input type="button" value="right" onclick="right()"><br><br>
+	<hr>
+	4c)
+	<input type="color" id="color" value="#ffffff">
+	<input type="button" value="Click to change background color" onclick="bg()">
+</body>
+<script>
+function bg(){
+	document.body.style.backgroundColor=document.getElementById("color").value;
+}
+function left(){
+	document.getElementById("xyz").align="left";
+}
+function right(){
+	document.getElementById("xyz").align="right";
+}
+function changeC(){
+	document.getElementById("abc").innerHTML = "This is new content";
+}
+function center(){
+	document.getElementById("xyz").align="center";
+}
+
+</script>
+</html>
