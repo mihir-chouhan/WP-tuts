@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>jQuery</title>
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $(".a").text("Hello World!");//Select Element by class
+            $("#mark").css("background", "yellow");//Select Element by ID
+            $('input[name="p"]').css("background", "red");//Select Element by the exact name
+            $('input[name^="q"]').css("background", "yellow");//Select Element by the letter it starts with
+            $('input[name$="r"]').css("background", "orange");//Select Element by the letter it ends with
+            $('input[name*="s"]').css("background", "green");//Select Element by the letter it contains
+        });
+    </script>
+    <script>//ON HOVER
+        $(document).ready(function(){
+            $("#p1").hover(function(){
+                alert("You entered p1!");
+            },
+            function(){
+                alert("Bye! You now leave p1!");
+            }); 
+        });
+    </script>
+    <script>//ON CLICK
+        $(document).ready(function(){
+            $("#button").click(function(){
+                alert("Button was clicked once");
+            });
+        });
+    </script>
+    <script>//ON DOUBLE CLICK
+        $(document).ready(function(){
+            $("#but").dblclick(function(){
+                alert("Button was clicked twice");
+            });
+        });
+    </script>
+</head>
+<body>
+    <p class="a">Not loaded yet.</p>
+    <p id="mark">This is a paragraph.</p>
+    <p>The following is done by using jquery , gets elements name and also it's other attributes are used</p>
+    <input type="text" name="p" placeholder="name=p">
+    <input type="text" name="qp" placeholder="name=qp">
+    <input type="text" name="par" placeholder="name=par">
+    <input type="text" name="asa" placeholder="name=asa">   
+    <br>
+    <p id="p1" style="width: 10% ; height: auto; border : 1px solid;">On hover.</p>
+    <button id="button">Single click</button>
+    <button id="but">Double click</button>
+</body>
+</html>                                
