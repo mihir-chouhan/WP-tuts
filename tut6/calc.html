@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0, user-scalable=yes" /><meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+	<title>Calculator</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+<style>
+	body{
+		font-family: "Comic Sans ms";
+	}
+	.container{
+		width: 600px;
+		height: auto;
+		border: 10px solid black;
+		background-color: grey;
+		box-shadow: 10px 10px 5px #888888;
+		margin-top: 10%;
+		border-style: outset;
+		border-radius: 30px;
+	}
+	#box{
+		background-color: white;
+		text-align: center;
+		width: 90%;
+		height: 100px;
+		border: 1px solid black;
+		margin : 0 auto;
+		box-shadow: 10px 10px 5px black; 
+		margin-bottom : 3%;
+	}
+	#box2{
+		margin-top: 10%;
+		float: right;
+		margin-right: 5%;
+	}
+	#cell{
+		background-color: lightgrey;
+		width: 90%;
+		height: 50px;
+		margin:0 auto;
+		text-align: center;
+		font-size: 30px;
+		border-radius: 10px;
+		margin-bottom: 4%;
+	}
+	.btn{
+		border-radius: 10px;
+		width: 100%;
+		height: 100%;
+		border-style: groove;
+		border : 5px solid white;
+		background-color: lightgrey;
+	}
+</style>
+<body>
+	<div class="container">
+	<p align="center" style="margin-top: 10px;"><b>CALCULATOR</b></p>
+		<div class="row">
+			<div id="box"><p id="box2"></p></div>
+		</div>
+		<div class="row">
+			<div class="col-md-3 col-xs-3">
+				<div id="cell"><button type="button" onclick="print9()" id="9"  value="9" class="btn">9</button></div>
+			</div>
+			<div class="col-md-3 col-xs-3">
+				<div id="cell"><button type="button" onclick="print8()" id="8"  value="8" class="btn">8</button></div>
+			</div>
+			<div class="col-md-3 col-xs-3">
+				<div id="cell"><button type="button" onclick="print7()" id="7"  value="7" class="btn">7</button></div>
+			</div>
+			<div class="col-md-3 col-xs-3">
+				<div id="cell"><button type="button" onclick="printdiv()" id="div" class="btn">/</button></div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-3 col-xs-3">
+				<div id="cell"><button type="button" onclick="print6()" id="6"  value="6" class="btn">6</button></div>
+			</div>
+			<div class="col-md-3 col-xs-3">
+				<div id="cell"><button type="button" onclick="print5()" id="5"  value="5" class="btn">5</button></div>
+			</div>
+			<div class="col-md-3 col-xs-3">
+				<div id="cell"><button type="button" onclick="print4()"  id="4" value="4" class="btn">4</button></div>
+			</div>
+			<div class="col-md-3 col-xs-3">
+				<div id="cell"><button type="button" onclick="printmul()" id="mul" class="btn">*</button></div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-3 col-xs-3">
+				<div id="cell"><button type="button" onclick="print3()" id="3" value="3" class="btn">3</button></div>
+			</div>
+			<div class="col-md-3 col-xs-3">
+				<div id="cell"><button type="button" onclick="print2()" id="2" value="2" class="btn">2</button></div>
+			</div>
+			<div class="col-md-3 col-xs-3">
+				<div id="cell"><button type="button" onclick="print1()" id="1" value="1" class="btn">1</button></div>
+			</div>
+			<div class="col-md-3 col-xs-3">
+				<div id="cell"><button type="button" onclick="printminus()" id="minus" class="btn">-</button></div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-3 col-xs-3">
+				<div id="cell"><button type="button" onclick="print0()" id="0" value="0" class="btn">0</button></div>
+			</div>
+			<div class="col-md-3 col-xs-3">
+				<div id="cell"><button type="button" onclick="printclear()" id="clr" class="btn">C</button></div>
+			</div>
+			<div class="col-md-3 col-xs-3">
+				<div id="cell"><button type="button" onclick="printplus()" id="plus" class="btn">+</button></div>
+			</div>
+			<div class="col-md-3 col-xs-3">
+				<div id="cell"><button type="button" onclick="myFunction()" value="0" class="btn">=</button></div>
+			</div>
+		</div>
+	</div>
+	<a href="index.html"><button>Go to main page</button></a>
+<!-- 	<a href="clock.html"><button>Go to clock</button></a> -->
+</body>
+<script src="cal.js"></script>
+</html>
